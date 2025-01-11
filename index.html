@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Wala</title>
+
+     <!-- google font link -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    
+      <!-- font awasome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <!-- tailwindcss -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-poppins bg-orange-950">
+
+    <!-- header section -->
+
+    <header id="header" class=" fixed w-full left-0 top-0   bg-orange-950 ">
+       <div>
+
+
+       </div>
+
+        <nav id="mainmenu" class="flex items-center p-4 justify-between">
+            <a href="#" class="nav-logo">
+                <h2 class="text-orange-400 text-lg md:text-4xl font-semibold lg:mt-6 pb-4 md:ml-20 ">☕ Coffeewala</h2>
+    
+            </a>
+            <ul class=" nav-menu hidden md:flex  md:mr-20   ">
+                <li class="active inline-block">
+                 
+                    <a href="#" class="block text-xs md:text-lg p-1  text-white  md:mr-2 px-3  py-3 font-semibold transition-all hover:bg-orange-400 hover:text-black rounded-xl   ">Home</a>
+                </li>
+                <li class="active inline-block">
+                    <a href="#about" class="block text-xs md:text-lg p-1 text-white   md:mr-2 px-3 py-3 font-semibold transition-all hover:bg-orange-400  hover:text-black  rounded-xl   ">About</a>
+                </li>
+                <li class="active inline-block">
+                    <a href="#menu" class="block text-xs md:text-lg p-1 text-white   md:mr-2 px-3 py-3 font-semibold transition-all hover:bg-orange-400  hover:text-black rounded-xl   ">Menu</a>
+                </li>
+                <li class="active inline-block">
+                    <a href="#testimonial" class="block text-xs md:text-lg p-1 text-white   md:mr-2 px-3 py-3 font-semibold transition-all hover:bg-orange-400  hover:text-black rounded-xl   ">Testimonial</a>
+                </li>
+                <li class="active inline-block">
+                    <a href="#gallery" class="block text-xs md:text-lg p-1 text-white   md:mr-2 px-3 py-3 font-semibold transition-all hover:bg-orange-400  hover:text-black rounded-xl">Gallery</a>
+                </li>
+                <li class="active inline-block ">
+                    <a href="#contact" class="block text-xs md:text-lg p-1 text-white   md:mr-2 px-3 py-3 font-semibold transition-all hover:bg-orange-400  hover:text-black rounded-xl   ">Contact</a>
+                </li>
+
+            </ul>
+
+            <button class="p-2 lg:hidden lg:ml-0 ml-72 mb-3 " onclick="handleMenu()">
+                <i class="fa-solid fa-bars text-orange-600 hover:text-orange-400"></i>
+            </button>
+
+
+   <!-- for mobile view -->
+   <div id="nav-dialog" class="fixed z-10  md:hidden bg-orange-950 inset-0 p-3   w-[200px] h-[600px]"> 
+    <div id="nav-bar" class="flex justify-between">
+     <a href="#" id="brand" class=" flex gap-2  items-center " >
+        
+       <span class="text-xl font-bold text-orange-500">☕ Coffeewala</span>
+     </a>
+     <button class="p-2 md:hidden bg-orange-800 rounded-lg" onclick="handleMenu()">
+        <i class="fa-solid fa-xmark text-white"></i>
+    </button>
+   </div>
+   <div class="mt-24 text-center ">
+    <a href="#home"  class="font-medium border m-3 p-3 hover:bg-orange-800  block  rounded-lg text-white hover:text-white" >Home</a>
+    <a href="#about"  class="font-medium border m-3 p-3 hover:bg-orange-800  block  rounded-lg text-white hover:text-white" >About</a>
+    <a href="#menu"  class="font-medium border m-3 p-3 hover:bg-orange-800  block  rounded-lg text-white hover:text-white" >Menu</a>
+    <a href="#testimonial"  class="font-medium border m-3 p-3 hover:bg-orange-800  block  rounded-lg text-white hover:text-white" >Testimonial</a>
+    <a href="#gallery"  class="font-medium border m-3 p-3 hover:bg-orange-800  block  rounded-lg text-white hover:text-white" >Gallery</a>
+    <a href="#contact"  class="font-medium border m-3 p-3 hover:bg-orange-800  block  rounded-lg text-white hover:text-white" >Contact</a>
+   
+   </div>
+   
+  
+    
+ </div>
+
+
+        </nav>
+    </header>
+
+
+    <!--hero section end -->
+
+ <main class="">
+      <section class= "bg-orange-950 w-full  md:mt-20 mt-14 " id="home">
+        <div class="flex items-center justify-between ">
+             
+            <div class=" text-white md:ml-10">
+                <h2 class=" ml-8 md:text-3xl text-lg font-bold mt-12 md:mt-24">Best Coffee</h2>
+                <h3 class=" ml-8 font-semibold md:text-xl text-sm">Make your day great with our speacial Coffee!</h3>
+                <p class=" ml-8 md:text-lg text-[12px]">Welcome  to our coffee paradise,where every beans tells a story  <br>and every cup sperk joy.</p>
+               <div class="m-8 ">
+                <a href="#" class="border rounded-lg hover:bg-orange-400 hover:text-black text-[10px] md:text-lg font-semibold md:font-semibold md:p-2 p-1  mr-3">Order now</a>
+                <a href="#" class="border rounded-lg  hover:bg-orange-400 hover:text-black text-[10px] md:text-lg font-semibold md:font-semibold md:p-2 p-1 ">Contact us</a>
+                
+                 
+               </div>
+            </div>
+            <div>
+                <img src="imags/coffee-hero-section.png" alt="" class="md:h-[600px] md:w-[600px] h-[200px] w-[200px] md:mr-32  mr-8 md:mt-24">
+            </div>
+
+        </div>
+      </section>
+
+      <!-- about section -->
+        <section class="mt-20" id="about">
+            <div class="md:flex md:mt-14 items-center md:justify-between">
+                <div class="ml-4">
+                   <img src="imags/about-image.jpg" alt="" class="md:h-[500px] md:w-[550px]  h-[300px] w-[300px] md:rounded-lg rounded-full mt-20 ml-20"> 
+
+                </div>
+                <div class="mr-10 ml-8 md:ml-56">
+                    <h2 class="text-2xl text-center font-bold text-white  mt-10 md:mr-24 underline">About Us</h2>
+                    <p class="text-gray-200 md:text-xl mt-6">At Coffee house in Berndorf , Germany,we pride <br>observ on  being  a goto destination for  coffee <br>lovers and conversation seekers alike. We are <br> decided to providing a exeptional coffee expparience  in a crazy and inviting atmosphrere,where guest <br> can relax , unwide and enjoy their time im comfort.</p>
+                  
+                    <div class="text-white md:text-xl  mt-8 ml-40">
+                        <a href="#"  ><i class="fa-brands fa-facebook pr-5 hover:text-orange-400"></i></a>
+                        <a href="#" ><i class="fa-brands fa-twitter pr-5 hover:text-orange-400"></i></a>
+                        <a href="#" ><i class="fa-brands fa-square-instagram
+                            fa-brands fa-square-instagram hover:text-orange-400"></i></a>
+                       
+    
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+
+</main>
+
+  <!-- menu section  -->
+
+  <div class="mt-36 " id="menu">
+
+    <h1 class="text-center text-orange-400 text-xl lg:text-4xl font-bold  mb-2">Our Menu</h1>
+    <div class=" rounded bg-orange-500 h-2 lg:w-52 w-28 lg:ml-[640px] ml-[188px]"></div>
+
+    <div class="  flex flex-col lg:flex-row ">
+        
+            
+        
+                <div class="bg-orange-900 rounded-lg w-[350px]  text-center ml-16 mt-10  lg:ml-28">
+                    
+                        <div class="  w-[350px]">
+                            <img src="imags/hot-beverages.png" alt="" class="" >
+                             
+                         </div>
+                         
+                         <div class="text-white p-4">
+                            <div class="border border-orange-500 rounded-lg bg-orange-950 ml-20 w-40 mb-4">
+                                <h2 class="text-lg font-bold p-3" >Price : <span class="text-orange-400"> 179 </span> TK</h2>
+                            </div>
+                            
+                             <h3 class="text-xl font-semibold text-orange-400">Hot Beverages</h3>
+                             <p class="pt-6">Wide rang of steaming hot coffee to make you freh and light .</p>
+                         </div>
+                  
+                    
+                 </div>
+
+                
+                    <div class=  "bg-orange-900   rounded-lg w-[350px]   text-center ml-16 mt-10 lg:ml-28 pb-4">
+                    
+                        <div class="  w-[350px]">
+                            <img src="imags/burger-frenchfries.png" alt="" class="" >
+                             
+                         </div>
+                         
+                         <div class="text-white p-4">
+                            <div class="border border-orange-500 rounded-lg bg-orange-950 ml-20 mt-4 w-40 mb-4">
+                                <h2 class="text-lg font-bold p-3" >Price : <span class="text-orange-400"> 279 </span> TK</h2>
+                            </div>
+                            
+                             <h3 class="text-xl font-semibold text-orange-400">Hot Chilli Burger</h3>
+                             <p class="pt-6">Quick bites to satisfy your small size hungry.</p>
+                         </div>
+                  
+                    
+                 </div>
+
+                 
+               
+                
+               
+                <div class="bg-orange-900 rounded-lg w-[350px]  text-center ml-16 mt-10  lg:ml-28">
+                    
+                        <div class="  w-[350px]">
+                            <img src="imags/cold-beverages.png" alt="" class="" >
+                             
+                         </div>
+                         
+                         <div class="text-white p-4">
+                            <div class="border border-orange-500 rounded-lg bg-orange-950 ml-20 w-40 mb-4">
+                                <h2 class="text-lg font-bold p-3" >Price : <span class="text-orange-400"> 450 </span> TK</h2>
+                            </div>
+                            
+                             <h3 class="text-xl font-semibold text-orange-400">Cold Beverages</h3>
+                             <p class="pt-2">Creamy and frothy cold to make you cool .</p>
+                         </div>
+                  
+                    
+                        </div>             
+               
+    </div>
+
+    <div class="  flex flex-col lg:flex-row ">
+        
+            
+        
+               
+               
+                <div class=  "bg-orange-900   rounded-lg w-[350px]   text-center ml-16 mt-10 lg:ml-28 pb-4">
+                    
+                        <div class="  w-[350px]">
+                            <img src="imags/refreshment.png" alt="" class="" >
+                             
+                         </div>
+                         
+                         <div class="text-white p-4">
+                            <div class="border border-orange-500 rounded-lg bg-orange-950 ml-20 w-40 mb-4">
+                                <h2 class="text-lg font-bold p-3" >Price : <span class="text-orange-400"> 150 </span> TK</h2>
+                            </div>
+                            
+                             <h3 class="text-xl font-semibold text-orange-400">Fresh Staberry juice</h3>
+                             <p class="pt-6">Fruit and refreshing drink to make feel refresh  .</p>
+                         </div>
+                  
+                    
+                 </div>
+               
+                <div class="bg-orange-900  rounded-lg w-[350px]  text-center ml-16 mt-10  lg:ml-28">
+                    
+                        <div class="  w-[350px]">
+                            <img src="imags/desserts.png" alt="" class="" >
+                             
+                         </div>
+                         
+                         <div class="text-white p-4">
+                            <div class="border border-orange-500 rounded-lg bg-orange-950 ml-20 w-40 mb-4">
+                                <h2 class="text-lg font-bold p-3" >Price : <span class="text-orange-400"> 279 </span> TK</h2>
+                            </div>
+                            
+                             <h3 class="text-xl font-semibold text-orange-400">Staverry Venila Dessert</h3>
+                             <p class="pt-2">Wide rang of steaming hot coffee to make you freh and light .</p>
+                         </div>
+                  
+                    
+                 </div>             
+                <div class="bg-orange-900 rounded-lg w-[350px]  text-center ml-16 mt-10  lg:ml-28">
+                    
+                        <div class="  w-[350px]">
+                            <img src="imags/special-combo.png" alt="" class="" >
+                             
+                         </div>
+                         
+                         <div class="text-white p-4">
+                            <div class="border border-orange-500 rounded-lg bg-orange-950 ml-20 mt-6 w-40 mb-4">
+                                <h2 class="text-lg font-bold p-3" >Price : <span class="text-orange-400"> 799 </span> TK</h2>
+                            </div>
+                            
+                             <h3 class="text-xl font-semibold text-orange-400">Speacial Combo</h3>
+                             <p class="pt-6">Your favourit eating and drinkink combation.</p>
+                         </div>
+                  
+                    
+                 </div>             
+               
+          </div>
+
+
+  </div>
+  
+
+  <!-- Testimonial section  -->
+
+      <div class="mt-32 m-4" id="testimonial">
+           
+         <h1 class="text-center text-orange-400 text-xl lg:text-4xl font-bold  mb-2">Testimonials</h1>
+          <div class=" rounded bg-orange-500 h-2 lg:w-60 w-36 lg:ml-[610px] ml-[156px]"></div>
+
+          <div class="flex flex-col lg:flex-row mt-8">
+                <div class="border bg-slate-500 rounded-lg  lg:mt-8 lg:ml-6 ">
+                     <div class="w-[250px] ml-28 lg:ml-12 ">
+                     <img src="imags/user-1.jpg" class="lg:rounded-lg rounded-full">
+                     </div>
+                     <div class="text-white ml-16 lg:ml-8 mt-6 pb-4">
+                     <h3 class="text-xl text-slate-900 font-semibold underline mb-3">Sara Jhonson </h3>
+                    <i class=""> Love the french rost . Perfectly<br> balanced and rice .Will order again..... ! </i>
+                     </div>
+                </div>              
+                <div class="border bg-slate-500 rounded-lg lg:mt-8 lg:ml-6 mt-10">
+                     <div class="w-[250px] ml-28 lg:ml-12">
+                     <img src="imags/user-2.jpg" class="lg:rounded-lg rounded-full">
+                     </div>
+                     <div class="text-white ml-16 lg:ml-10 mt-6 pb-4">
+                     <h3 class="text-xl text-slate-900 font-semibold underline mb-3">Micle vone </h3>
+                    <i > Love the french rost . Perfectly<br> balanced and rice .Will order again..... ! </i>
+                     </div>
+                </div>              
+                <div class="border bg-slate-500 rounded-lg lg:mt-8 lg:ml-6 mt-10">
+                     <div class="w-[250px] ml-28 lg:ml-12">
+                     <img src="imags/user-3.jpg" class="lg:rounded-lg rounded-full">
+                     </div>
+                     <div class="text-white ml-16 lg:ml-10 mt-6 pb-4">
+                     <h3 class="text-xl text-slate-900 font-semibold underline mb-3">Asis Moris </h3>
+                    <i > Love the french rost . Perfectly<br> balanced and rice .Will order again..... ! </i>
+                     </div>
+                </div>              
+                <div class="border bg-slate-500 rounded-lg lg:mt-8 lg:ml-6 mt-10">
+                     <div class="w-[250px] ml-28 lg:ml-12">
+                     <img src="imags/user-4.jpg" class="lg:rounded-lg rounded-full">
+                     </div>
+                     <div class="text-white ml-16 lg:ml-10 mt-6 pb-4">
+                     <h3 class="text-xl text-slate-900 font-semibold underline mb-3">Farema Sahriar</h3>
+                    <i > Love the french rost . Perfectly<br> balanced and rice .Will order again..... ! </i>
+                     </div>
+                </div>              
+               
+                             
+           </div>
+          <div class="flex flex-col lg:flex-row mt-8">
+                <div class="border bg-slate-500 rounded-lg  lg:mt-8 lg:ml-6">
+                     <div class="w-[250px] ml-28 lg:ml-12">
+                     <img src="imags/user-3.jpg" class="lg:rounded-lg rounded-full">
+                     </div>
+                     <div class="text-white ml-16 lg:ml-10 mt-6 pb-4">
+                     <h3 class="text-xl text-slate-900 font-semibold underline mb-3"> Jhonson Klik </h3>
+                    <i > Love the french rost . Perfectly<br> balanced and rice .Will order again..... ! </i>
+                     </div>
+                </div>              
+                <div class="border bg-slate-500 rounded-lg lg:mt-8 lg:ml-6 mt-10">
+                     <div class="w-[250px] ml-28 lg:ml-12">
+                     <img src="imags/user-4.jpg" class="lg:rounded-lg rounded-full">
+                     </div>
+                     <div class="text-white ml-16 lg:ml-10 mt-6 pb-4">
+                     <h3 class="text-xl text-slate-900 font-semibold underline mb-3">Fualipo Daial</h3>
+                    <i > Love the french rost . Perfectly<br> balanced and rice .Will order again..... ! </i>
+                     </div>
+                </div>              
+                <div class="border bg-slate-500 rounded-lg lg:mt-8 lg:ml-6 mt-10">
+                     <div class="w-[250px] ml-28 lg:ml-12">
+                     <img src="imags/user-1.jpg" class="lg:rounded-lg rounded-full">
+                     </div>
+                     <div class="text-white ml-16 lg:ml-10 mt-6 pb-4">
+                     <h3 class="text-xl text-slate-900 font-semibold underline mb-3">Robarto Karloss</h3>
+                    <i > Love the french rost . Perfectly<br> balanced and rice .Will order again..... ! </i>
+                     </div>
+                </div>              
+                <div class="border bg-slate-500 rounded-lg lg:mt-8 lg:ml-6 mt-10">
+                     <div class="w-[250px] ml-28 lg:ml-12">
+                     <img src="imags/user-5.jpg" class="lg:rounded-lg rounded-full">
+                     </div>
+                     <div class="text-white ml-16 lg:ml-10 mt-6 pb-4">
+                     <h3 class="text-xl text-slate-900 font-semibold underline mb-3">Cris Gail</h3>
+                    <i > Love the french rost . Perfectly<br> balanced and rice .Will order again..... ! </i>
+                     </div>
+                </div>              
+               
+                             
+           </div>
+          
+         
+      </div>
+     
+
+    <!-- Gallary Section  -->
+
+    <div class="mt-32 m-4" id="gallery"> 
+        <h1 class="text-center text-orange-400 text-xl lg:text-4xl font-bold  mb-2">GALLARY</h1>
+        <div class=" rounded bg-orange-500 h-2 lg:w-48 w-28 lg:ml-[634px] ml-[172px] mb-16"></div>
+
+     <div class=" flex flex-col lg:flex-row mt-8">
+         
+                <div class="lg:ml-4 ml-2">
+                  
+                    <img src="imags/gallery-1.jpg" class="rounded-xl  h-[450px] w-[450px]">
+           
+                 </div>
+                <div class="lg:ml-7 ml-2 cursor-zoom-in ">
+                  
+                    <img src="imags/gallery-2.jpg" class="rounded-xl   h-[450px] w-[450px] lg:mt-0 mt-14 ">
+           
+                 </div>
+                <div class="lg:ml-7 ml-2  ">
+                  
+                    <img src="imags/gallery-3.jpg" class="rounded-xl  h-[450px] w-[450px] lg:mt-0 mt-14">
+           
+                 </div>
+                          
+        </div>
+     <div class=" flex flex-col lg:flex-row mt-20">
+         
+                <div class="lg:ml-4 ml-2">
+                  
+                    <img src="imags/gallery-4.jpg" class="rounded-xl  h-[450px] w-[450px]">
+           
+                 </div>
+                <div class="lg:ml-7 ml-2  ">
+                  
+                    <img src="imags/gallery-5.jpg" class="rounded-xl  h-[450px] w-[450px] lg:mt-0 mt-14">
+           
+                 </div>
+                <div class="lg:ml-7 ml-2  ">
+                  
+                    <img src="imags/gallery-6.jpg" class="rounded-xl  h-[450px] w-[450px] lg:mt-0 mt-14">
+           
+                 </div>
+                          
+        </div>
+    </div>
+
+     <!-- contact section -->
+   <section id="contact">
+
+   
+    <div class="mt-36  bg-rose-100">
+        <div class="mt-14">
+            <h1 class="text-center text-orange-900 text-xl lg:text-4xl font-bold  mb-2">Contact Us</h1>
+            <div class=" rounded bg-orange-900 h-2 lg:w-48 w-32 lg:ml-[646px] ml-[178px] mb-16"></div>
+        </div>
+      
+        
+         <div class="flex flex-col lg:flex-row lg:justify-between">
+
+         
+          <!-- contact part -->
+        <div class=" ml-24 lg:ml-32">
+             <ul class="">
+                <li class="flex ">
+                    <i class="fa-solid fa-location-crosshairs m-3"></i>
+                    <p class=" font-sans mt-2 font-bold">9/A,B block,Rajlokki Avenue</p>
+                </li>
+                <li class="flex ">
+                    <i class="fa-regular fa-envelope m-3"></i>
+                    <p class=" cursor-pointer hover:underline font-sans mt-2 font-bold">info@coffeeshop.com</p>
+                </li>
+                <li class="flex ">
+                    <i class="fa-solid fa-phone m-3"></i>
+                    <p class=" font-sans mt-2 font-bold">88764211;01752805161</p>
+                </li>
+                <li class="flex ">
+                    <i class="fa-solid fa-clock m-3"></i>
+                    <p class=" font-sans mt-2 font-bold">Sun - Fri; 10:00 am - 6:00 pm</p>
+                </li>
+              
+                <li class="flex ">
+                    <i class="fa-solid fa-clock m-3"></i>
+                    <p class=" font-sans mt-2 font-bold">Saturday : Closed</p>
+                </li>
+                <li class="flex ">
+                    <i class="fa-solid fa-globe m-3"></i>
+                    <p class="cursor-pointer hover:underline font-sans mt-2 font-bold">www.alifsarkerrony@gmail.com</p>
+                </li>
+             </ul>
+        </div>
+       
+        <!-- form part -->
+        <div class="mt-10 lg:mt-0 lg:mr-20 mb-10">
+            <form>
+              
+               <div class="flex flex-col lg:flex-row ml-2">
+                   <input type="text" placeholder="Enter your name" class="bg-orange-950 border-zinc-700 px-3 py-2 text-white font-semibold  w-[90%] md:w-48%  mt-3 mb-3 mr-4 rounded-lg">
+                   <input type="email" placeholder="Enter your email" class="bg-orange-950 border-zinc-700 px-3 py-2  text-white font-semibold  w-[90%] md:w-48%  mt-3 mb-3 mr-2 rounded-lg">
+               </div>
+                <textarea name="" id="" placeholder="Your Massage" 
+                    class="bg-bg-color border-blue-950 px-3 py-2 w-[90%] lg:w-44% font-bold  mt-3 mb-3 mr-2 ml-1 rounded-lg h-[100px] "></textarea>
+                    <input type="submit" value="Send massage" class="bg-orange-950 text-white font-sans font-semibold inline-block px-4 py-2 rounded-lg hover:bg-  hover:bg-orange-800 transition-all ml-2">
+                   
+            </form>
+        </div>
+
+    </div>
+
+    </div>
+
+</section>
+
+<!-- footer part -->
+
+<footer class="p-6">
+    <div class="text-center">
+        <div>
+            <h2 class="text-orange-400  text-xl md:text-4xl font-semibold lg:mt-6 mt-4 ">☕ Coffee Wala</h2>
+            <p class="text-white ml-4 mt-4">@ coffeewala2024</p>
+        </div>
+        <div class="flex ml-28 lg:ml-[600px]  mt-2">
+            <i class="fa-solid fa-shield-halved text-white mt-1"></i>
+            <p class="text-white  ml-2">All Rights Regerved by Coffee Wala</p>
+        </div>
+
+        <div class="text-white md:text-xl  mt-4 ml-30">
+            <a href="#"  ><i class="fa-brands fa-facebook pr-5 hover:text-orange-400"></i></a>
+            <a href="#" ><i class="fa-brands fa-twitter pr-5 hover:text-orange-400"></i></a>
+            <a href="#" ><i class="fa-brands fa-square-instagram
+                fa-brands fa-square-instagram  hover:text-orange-400"></i></a>
+           
+
+        </div>
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
